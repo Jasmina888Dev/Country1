@@ -1,0 +1,64 @@
+#header {
+  padding: 30px 0;
+  background: #ffffff1b;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--nav {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      
+      select {
+        font-family: Frank Ruhl Libre;
+        font-weight: 700;
+        font-size: 24px;
+        color: #004a60;
+        border: none;
+        appearance: none;
+        outline: none;
+        background: none;
+      }
+      a {
+        font-family: Frank Ruhl Libre;
+        font-weight: 700;
+        font-size: 24px;
+        color: #004a60;
+        .active {
+          color: #feffff;
+        }
+      }
+    }
+    &--btn {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      select {
+        background: none;
+        padding-left: 27px;
+        width: 124px;
+        height: 42px;
+        border: 2px solid #004a60;
+        outline: none;
+        border-radius: 10px;
+        color: #004a60;
+        font-family: Frank Ruhl Libre;
+        font-weight: 700;
+        font-size: 20px;
+        appearance: none;
+      }
+      button {
+        width: 125px;
+        height: 42px;
+        font-family: Frank Ruhl Libre;
+        font-weight: 700;
+        font-size: 20px;
+        background: #004a60;
+        color: #ffffff;
+        border-radius: 10px;
+        border: none;
+      }
+    }
+  }
+}

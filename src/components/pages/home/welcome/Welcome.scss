@@ -1,0 +1,48 @@
+#welcome {
+  padding: 40px 0;
+  .welcome {
+    &--nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 35px;
+      h1 {
+        font-family: Abril Fatface;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 100px;
+        color: white;
+        text-align: center;
+      }
+      &__inp {
+        width: 688px;
+        height: 56px;
+        background: white;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        input {
+          background: none;
+          border: none;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 140%;
+        }
+        a {
+          font-size: 24px;
+        }
+      }
+      p {
+        font-family: Frank Ruhl Libre;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        letter-spacing: 5%;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+}
