@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import headerbg from "../../../assets/image"
+import "./Header.scss"; // Стили ушул файлга жазылат
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div id="header">
       <div className="container">
         <div className="header">
-          <h1></h1>
-          <div className="header--nav">
+          <h1>Logo</h1>
+
+          <div className={`header--nav ${menuOpen ? "open" : ""}`}>
             <NavLink to={"/"}>Home</NavLink>
             <select>
               <option value="">Regions</option>
@@ -24,6 +27,7 @@ const Header = () => {
             <NavLink to={"/"}>Gallery</NavLink>
             <NavLink to={"/"}>Routes</NavLink>
           </div>
+
           <div className="header--btn">
             <select>
               <option value="">Eng</option>
@@ -31,6 +35,12 @@ const Header = () => {
               <option value="kyrgyz">Kyrgyz</option>
             </select>
             <button>Sign up</button>
+          </div>
+
+          <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>
