@@ -1,7 +1,8 @@
 import React from "react";
 import welcomeBg from "../../../../assets/image/welcomelogo.png";
 import { FiSearch } from "react-icons/fi";
-import { CgArrowTopRightO } from "react-icons/cg";
+import logo from "../../../../assets/image/Inst.svg";
+import { GoArrowUpRight } from "react-icons/go";
 
 const Welcome = () => {
   return (
@@ -11,7 +12,6 @@ const Welcome = () => {
         backgroundImage: `url(${welcomeBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "100vh",
         objectFit: "contain",
       }}
     >
@@ -26,9 +26,9 @@ const Welcome = () => {
                 <FiSearch />
               </a>
               <input type="text" placeholder="Where to go  ?" />
-            <a>
-              <CgArrowTopRightO />
-            </a>
+              <h6>
+                <GoArrowUpRight />
+              </h6>
             </div>
             <p>
               Are you ready to embark on an exciting journey through the <br />
@@ -37,6 +37,18 @@ const Welcome = () => {
               the perfect trip to Kyrgyzstan.
             </p>
           </div>
+        </div>
+        <div className="position">
+          <h1>Kyrgyzstan</h1>
+          <p>
+            Kyrgyz Republic is a landlocked country located in the heart of{" "}
+            <br />
+            Central Asia. The capital is Bishkek. The mountainous region of{" "}
+            <br /> the Tian Shan covers over 80% of the country. Kyrgyzstan is{" "}
+            <br /> occasionally referred to as "the Switzerland of Central
+            Asia". <br /> The country is divided into seven provinces, which are
+            Batken, <br /> Chuy, Jalal-Abad, Issyk-Kul, Naryn, Osh and Talas.
+          </p>
         </div>
       </div>
     </div>
